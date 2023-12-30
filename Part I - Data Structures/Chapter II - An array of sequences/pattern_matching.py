@@ -127,3 +127,6 @@ for i_step in range(steps):
 #   list    tuple           memoryview
 #   range   array.array     collections.deque
 # NOTE 3: _ matched to any item, but it's never bound to it
+# NOTE 4: * can be used once per sequence, but it's possible to use several sequences in a case clause
+#    case ["lambda", [*params], *body]
+#    case ["define", [name, *params], *body]
