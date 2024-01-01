@@ -1,7 +1,4 @@
 # User-defined classes are hashable by default
-from operator import not_
-
-
 class HasableUserClass:
     a: int = 3
     t: list[int] = [1, 2]
