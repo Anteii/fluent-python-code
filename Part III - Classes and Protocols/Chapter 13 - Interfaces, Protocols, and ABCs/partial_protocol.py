@@ -1,6 +1,9 @@
 import collections.abc
 
-
+# NOTE: The whole example with testing classes with isinstance()
+# against collections.abc.Sequence is an ERROR
+# as there're several abc classes that can't be tested this way
+# https://docs.python.org/3/library/collections.abc.html
 class PartialSequence1:
     
     data = ['a', 'b', 'c', 'd']
